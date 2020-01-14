@@ -42,20 +42,18 @@ header
       color: #005792;
       border-radius: 3px 3px 0 0;
 
-    a:first-child
-      margin-left: 0;
-
-    a:last-child
-      margin-right: 0;
-
     a::before
       content: "";
       position: absolute;
-      top: 6px;
+      bottom: 12px;
       right: -17px;
-      height: 50%;
+      height: 38%;
       width: 2px;
       background: #13334c;
+      opacity: .7;
+
+    a:first-child::before
+      width: 3px;
 
     a:last-child::before
       content: "";
@@ -65,6 +63,12 @@ header
       height: 0;
       width: 0px;
       background: #13334c;
+
+    a:first-child
+      margin-left: 0;
+
+    a:last-child
+      margin-right: 0;
 
 /* Footer Layout */
 footer
