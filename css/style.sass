@@ -7,7 +7,7 @@
 
 /* General Layout */
 .container
-  max-width: 1138px;
+  max-width: 960px;
   width: 90%;
   margin: 0 auto;
 
@@ -16,6 +16,10 @@ header
   text-align: center;
   background: #005792;
   border-bottom: 6px solid #fd5f00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   a
     display: inline-block;
@@ -70,6 +74,25 @@ header
     a:last-child
       margin-right: 0;
 
+/* Homepage Layout */
+#homepage
+  height: 100vh;
+  background: url(../img/background.jpg)no-repeat center -60px;
+  background-size: cover;
+
+  .container
+    text-align: center;
+
+    .swiper-button-prev,
+    .swiper-button-next
+      display: none !important;
+
+/* Section Layout */
+section
+  padding-top: 125px;
+  box-sizing: border-box;
+
+
 /* Footer Layout */
 footer
   position: fixed;
@@ -77,7 +100,7 @@ footer
   right: 0;
   bottom: 10px;
   text-align: center;
-  opacity: .5;
+  opacity: .8;
 
   p
     font-size: 10px;
