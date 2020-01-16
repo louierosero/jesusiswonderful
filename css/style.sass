@@ -1,3 +1,7 @@
+/* Google Font - Import */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
 /* Basic CSS Reset */
 *
   margin: 0;
@@ -7,9 +11,11 @@
 
 /* General Layout */
 .container
-  max-width: 960px;
-  width: 90%;
+  width: 960px;
   margin: 0 auto;
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Lora', serif;
 
 /* Header Layout */
 header
@@ -86,6 +92,27 @@ header
     .swiper-button-prev,
     .swiper-button-next
       display: none !important;
+
+    h2
+      background: #005792;
+      color: #fff
+      display: inline-block;
+      font-size: 56px;
+      margin-top: 120px;
+      margin-bottom: 20px;
+      padding: 8px 40px;
+
+    p
+      display: inline;
+      font-size: 22px;
+      line-height: 2.5;
+      padding: 6px 12px;
+      background: #fff;
+      -webkit-box-decoration-break: clone;
+      -ms-box-decoration-break: clone;
+      -o-box-decoration-break: clone;
+      box-decoration-break: clone;
+
 
 /* Section Layout */
 section
