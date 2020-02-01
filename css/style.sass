@@ -235,6 +235,51 @@ section
 .sermons:last-child
   margin-bottom: 50px;
 
+/* Gallery Layout */
+.gallery
+  background: #fff;
+  margin-top: 30px;
+  padding: 20px;
+
+  h2
+    font-size: 36px;
+    text-align: center;
+    margin: 10px 0 30px;
+
+    span
+      background: #005792;
+      color: #fff;
+      padding: 8px 20px;
+      display: inline-block;
+
+  .gallery-block
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    .gallery-block_photo
+      background: #959595;
+      height: 176px;
+      position: relative;
+
+    .gallery-block_photo::before
+      content: "Click Me";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      color: #fff;
+
+    .gallery-block_photo:hover
+      background: #005792;
+      cursor: pointer;
+
+    .gallery-block_photo:hover::before
+      opacity: 1;
+
+.gallery
+  margin-bottom: 50px;
 
 /* Footer Layout */
 footer
