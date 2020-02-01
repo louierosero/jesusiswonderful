@@ -30,6 +30,7 @@ header
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
 
   a
     display: inline-block;
@@ -83,6 +84,11 @@ header
 
     a:last-child
       margin-right: 0;
+
+/* Section Layout */
+section
+  padding-top: 125px;
+  box-sizing: border-box;
 
 /* Homepage Layout */
 #homepage
@@ -166,10 +172,69 @@ header
       p
         text-align: center;
 
-/* Section Layout */
-section
-  padding-top: 125px;
-  box-sizing: border-box;
+/* Sermons Layout */
+.sermons
+  background: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-gap: 20px;
+
+  .sermons-block
+    position: relative;
+
+    p.date
+      text-align: right;
+
+      span
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px 12px;
+        color: #fff;
+        background: #005792;
+        display: inline-block;
+
+    h2
+      margin: 65px 0 6px;
+      font-size: 36px;
+      border-bottom: 1px solid #333;
+
+    p.presented
+      font-size: 14px;
+
+      span
+        font-weight: bold;
+        padding-left: 6px;
+
+    .sermons-block_link
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      a
+        background: #fd5f00;
+        color: #fff;
+        padding: 10px 20px;
+        display: inline-block;
+        border: 1px solid #fd5f00;
+
+      a:last-child
+        background: #fff;
+        color: #fd5f00;
+        margin-left: 5px;
+
+      a:last-child:hover
+        background: #fd5f00;
+        color: #fff;
+
+  .sermons-block:first-child
+    background: #005792;
+    height: 300px;
+
+.sermons:last-child
+  margin-bottom: 50px;
+
 
 /* Footer Layout */
 footer
@@ -179,6 +244,7 @@ footer
   bottom: 10px;
   text-align: center;
   opacity: .8;
+  z-index: -1;
 
   p
     font-size: 10px;
