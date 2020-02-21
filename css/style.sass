@@ -84,10 +84,10 @@ section
 /* Homepage Layout */
 #homepage
   height: 100vh;
-  background: url(../img/background.jpg)no-repeat center -60px;
+  background: url(../img/background.jpg)no-repeat center center;
   background-size: cover;
-  position: relative;
-  z-index: -2;
+  // position: relative;
+  // z-index: -2;
 
   .container
     text-align: center;
@@ -159,7 +159,7 @@ section
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 45px;
 
       p
         text-align: center;
@@ -225,7 +225,7 @@ section
     height: 300px;
 
 .sermons:last-child
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 
 /* Gallery Layout */
 .gallery
@@ -270,12 +270,12 @@ section
     .gallery-block_photo:hover::before
       opacity: 1;
 
-.gallery
-  margin-bottom: 50px;
+.gallery:last-child
+  margin-bottom: 70px;
 
 /* Video Layout */
 .video
-  margin: 40px 0 55px;
+  margin: 40px 0 75px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -310,7 +310,7 @@ section
 #contactus
   text-align: center;
   background: #f1f1f1;
-  margin: 20px auto 50px;
+  margin: 20px auto 75px;
 
   .top
     background: url(../img/map.jpg)no-repeat center -26px;
@@ -350,19 +350,21 @@ section
 
     p
       font-size: 20px;
+      line-height: 1.75;
 
       a
         color: #fd5f00;
 
 /* Footer Layout */
 footer
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 10px;
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+  // bottom: 10px;
   text-align: center;
   opacity: .8;
-  z-index: -1;
+  margin-top: -50px
+  // z-index: -1;
 
   p
     font-size: 10px;
