@@ -21,6 +21,18 @@ h1, h2, h3, h4, h5, h6
   font-family: 'Lora', serif;
   font-weight: 300;
 
+.text-center
+  text-align: center !important;
+
+.mb10
+  margin-bottom: 10px;
+
+.mb20
+  margin-bottom: 20px;
+
+.mb65
+  margin-bottom: 65px !important;
+
 /* Header Layout */
 header
   text-align: center;
@@ -146,10 +158,11 @@ section
       h2
         font-size: 36px;
         text-align: center;
-        margin-bottom: 30px;
+        margin: 20px 0 30px;
         background: #005792;
         color: #f1f1f1;
         padding: 15px 0;
+
 
       p
         text-align: justify;
@@ -159,10 +172,26 @@ section
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 30px;
-      margin-bottom: 45px;
+      // margin-bottom: 45px;
 
       p
         text-align: center;
+
+    .block-grid
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+
+      .block-grid_item
+        padding: 20px;
+        border: 1px solid #3f3f3f;
+
+        h3
+          font-size: 24px;
+          font-weight: bold;
+
+        p
+          font-size: 14px;
 
 /* Sermons Layout */
 .sermons
