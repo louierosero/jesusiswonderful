@@ -17,7 +17,7 @@
 body
   background: #13334c;
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, h2 span
   font-family: 'Lora', serif;
   font-weight: 300;
 
@@ -278,29 +278,33 @@ section
 
   .gallery-block
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
 
     .gallery-block_photo
-      background: #959595;
-      height: 176px;
+      // background: #959595;
+      // height: 176px;
+      display: inherit;
       position: relative;
 
-    .gallery-block_photo::before
-      content: "Click Me";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      color: #f1f1f1;
+    // .gallery-block_photo::before
+    //   content: "Click Me";
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   opacity: 0;
+    //   color: #f1f1f1;
+    //
+    // .gallery-block_photo img:hover
+    //   background: #005792;
+    //   cursor: pointer;
+    //
+    // .gallery-block_photo:hover::before
+    //   opacity: 1;
 
-    .gallery-block_photo:hover
-      background: #005792;
-      cursor: pointer;
-
-    .gallery-block_photo:hover::before
-      opacity: 1;
+    img
+      width: 100%;
 
 .gallery:last-child
   margin-bottom: 70px;
@@ -396,6 +400,7 @@ footer
   text-align: center;
   opacity: .8;
   margin-top: -50px
+  padding-bottom: 16px;
   // z-index: -1;
 
   p
