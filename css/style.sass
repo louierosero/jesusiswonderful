@@ -397,10 +397,6 @@ section
 
 /* Footer Layout */
 footer
-  // position: fixed;
-  // left: 0;
-  // right: 0;
-  // bottom: 10px;
   text-align: center;
   opacity: .8;
   margin-top: -50px
@@ -413,3 +409,38 @@ footer
 
     a
       color: #fd5f00;
+
+/* Media Queries */
+@media (max-width: 960px)
+  /* General Layout */
+  .container
+    width: 90%;
+
+  /* Header Layout */
+  header
+
+    a.logo
+      width: 300px;
+
+    nav
+
+      a
+        font-size: 14px;
+        margin: 0 14px;
+
+  /* Homepage Layout */
+  #homepage
+
+    .container
+
+      h2
+        font-size: 40px;
+
+      p
+        font-size: 18px;
+
+  /* Footer Layout */
+  footer
+
+    p
+      font-size: 8px;
