@@ -621,8 +621,39 @@ footer
           .block-grid_item:last-child
             margin-bottom: 0;
 
+    /* Sermons Layout */
+    .sermons
+      display: block;
 
+      .sermons-block
 
+        p.date
+          position: absolute;
+          top: -40px;
+          right: 5px;
+
+          span
+            font-size: 8px;
+            background: #13334c;
+            font-weight: 300;
+            border-radius: 5px 5px 0 0;
+
+        h2
+          margin: 6px 0;
+
+        .sermons-block_link
+          margin-top: 20px;
+          position: relative;
+          text-align: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 5px;
+
+      .sermons-block:first-child
+        height: auto;
+
+    .sermons:last-child
+      margin-bottom: 8vh;
 
     /* Footer Layout */
     footer
