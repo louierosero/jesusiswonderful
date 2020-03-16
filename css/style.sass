@@ -414,7 +414,7 @@ footer
 @media (max-width: 960px)
   /* General Layout */
   .container
-    width: 90%;
+    width: 95%;
 
   /* Header Layout */
   header
@@ -547,3 +547,41 @@ footer
 
     p
       font-size: 8px;
+
+  @media (max-width: 768px)
+    /* General Layout */
+    .container
+      // width: 90%;
+
+    /* Header Layout */
+    header
+
+      a.logo
+        width: 200px;
+        margin: 14px auto 10px;
+
+      nav
+        display: none; // Temporarily Hidden
+
+    /* Homepage Layout */
+    #homepage
+
+      .container
+
+        .swiper-button-next,
+        .swiper-button-prev
+          display: none !important;
+
+        h2
+          margin-top: 10vh;
+          font-size: 28px;
+
+        p
+          font-size: 14px;
+
+    /* Footer Layout */
+    footer
+      margin-top: -30px;
+
+      p
+        font-size: 7px;
