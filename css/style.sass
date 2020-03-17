@@ -548,172 +548,199 @@ footer
     p
       font-size: 8px;
 
-  @media (max-width: 768px)
-    /* General Layout */
-    section
-      padding-top: 10vh;
+@media (max-width: 768px)
+  /* General Layout */
+  section
+    padding-top: 10vh;
 
-    .mb65
-      display: none;
+  .mb65
+    display: none;
 
-    /* Header Layout */
-    header
+  /* Header Layout */
+  header
 
-      a.logo
-        width: 200px;
-        margin: 14px auto 10px;
+    a.logo
+      width: 200px;
+      margin: 14px auto 10px;
 
-      nav
-        display: none; // Temporarily Hidden
+    nav
+      display: none; // Temporarily Hidden
 
-    /* Homepage Layout */
-    #homepage
+  /* Homepage Layout */
+  #homepage
 
-      .container
+    .container
 
-        .swiper-button-next,
-        .swiper-button-prev
-          display: none !important;
-
-        h2
-          margin-top: 10vh;
-          font-size: 28px;
-
-        p
-          font-size: 14px;
-
-    /* About Us Layout */
-    #aboutus
-
-      .container
-
-        .verse
-          margin: 50px 0;
-
-          h1
-            font-size: 24px;
-            line-height: 2;
-
-            br
-              display: none;
-
-        .block
-
-          h2
-            font-size: 20px;
-
-          p
-            font-size: 12px;
-
-        .block:last-child
-          margin-bottom: 8vh;
-
-        .block-two
-          display: block;
-          margin-bottom: 20px;
-
-        .block-grid
-          display: block;
-
-          .block-grid_item
-            margin-bottom: 10px;
-
-            h3
-              font-size: 16px;
-
-            p
-              font-size: 12px;
-
-          .block-grid_item:last-child
-            margin-bottom: 0;
-
-    /* Sermons Layout */
-    .sermons
-      display: block;
-
-      .sermons-block
-
-        p.date
-          position: absolute;
-          top: -40px;
-          right: 5px;
-
-          span
-            font-size: 8px;
-            background: #13334c;
-            font-weight: 300;
-            border-radius: 5px 5px 0 0;
-
-        h2
-          margin: 6px 0;
-
-        .sermons-block_link
-          margin-top: 20px;
-          position: relative;
-          text-align: center;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 5px;
-
-      .sermons-block:first-child
-        height: auto;
-
-    .sermons:last-child
-      margin-bottom: 8vh;
-
-    /* Gallery Layout */
-    .gallery
+      .swiper-button-next,
+      .swiper-button-prev
+        display: none !important;
 
       h2
-        font-size: 20px;
-        margin: 0 0 20px;
+        margin-top: 10vh;
+        font-size: 28px;
 
-      .gallery-block
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 6px;
+      p
+        font-size: 14px;
 
-    .gallery:last-child
-      margin-bottom: 8vh;
+  /* About Us Layout */
+  #aboutus
 
-    /* Videos Layout */
-    .video
-      display: block;
-      text-align: center;
-      margin-bottom: 8vh;
+    .container
 
-      .video-block
-        margin-bottom: 20px;
+      .verse
+        margin: 50px 0;
 
-    /* Contact Us Layout */
-    #contactus
-      margin-bottom: 8vh;
+        h1
+          font-size: 24px;
+          line-height: 2;
 
-      .top
-        padding: 50px 20px;
+          br
+            display: none;
+
+      .block
 
         h2
           font-size: 20px;
 
-        p.schedule
-          font-size: 12px;
-
-        p.location
-          font-size: 14px;
-
-      .middle
-        padding: 20px;
-
-        h3
-          font-size: 18px;
-
-      .bottom
-
         p
           font-size: 12px;
 
-    /* Footer Layout */
-    footer
-      margin-top: -30px;
+      .block:last-child
+        margin-bottom: 8vh;
+
+      .block-two
+        display: block;
+        margin-bottom: 20px;
+
+      .block-grid
+        display: block;
+
+        .block-grid_item
+          margin-bottom: 10px;
+
+          h3
+            font-size: 16px;
+
+          p
+            font-size: 12px;
+
+        .block-grid_item:last-child
+          margin-bottom: 0;
+
+  /* Sermons Layout */
+  .sermons
+    display: block;
+
+    .sermons-block
+
+      p.date
+        position: absolute;
+        top: -40px;
+        right: 5px;
+
+        span
+          font-size: 8px;
+          background: #13334c;
+          font-weight: 300;
+          border-radius: 5px 5px 0 0;
+
+      h2
+        margin: 6px 0;
+
+      .sermons-block_link
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+
+    .sermons-block:first-child
+      height: auto;
+
+  .sermons:last-child
+    margin-bottom: 8vh;
+
+  /* Gallery Layout */
+  .gallery
+
+    h2
+      font-size: 20px;
+      margin: 0 0 20px;
+
+    .gallery-block
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 6px;
+
+  .gallery:last-child
+    margin-bottom: 8vh;
+
+  /* Videos Layout */
+  .video
+    display: block;
+    text-align: center;
+    margin-bottom: 8vh;
+
+    .video-block
+      margin-bottom: 20px;
+
+  /* Contact Us Layout */
+  #contactus
+    margin-bottom: 8vh;
+
+    .top
+      padding: 50px 20px;
+
+      h2
+        font-size: 20px;
+
+      p.schedule
+        font-size: 12px;
+
+      p.location
+        font-size: 14px;
+
+    .middle
+      padding: 20px;
+
+      h3
+        font-size: 18px;
+
+    .bottom
 
       p
-        font-size: 7px;
+        font-size: 12px;
+
+  /* Footer Layout */
+  footer
+    margin-top: -30px;
+
+    p
+      font-size: 7px;
+
+@media (max-width: 414px)
+  /* Header Layout */
+  header
+
+    a.logo
+      width: 150px;
+      margin: 14px auto 6px;
+
+  /* Homepage Layout */
+  #homepage
+
+    .container
+
+      h2
+        font-size: 20px;
+        margin-bottom: 10px;
+
+      p
+        font-size: 10px;
+        line-height: 3;
+
+  /* Footer Layout */
+  footer
+
+    p
+      font-size: 5px;
