@@ -10,3 +10,10 @@ var mySwiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// Mobile Menu
+$(document).ready(function(){
+  $('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+});
