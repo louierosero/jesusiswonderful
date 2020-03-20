@@ -561,7 +561,7 @@ footer
 
     a.logo
       width: 200px;
-      margin: 14px auto 10px;
+      margin: 16px auto 8px;
 
     #nav-icon
       display: block;
@@ -597,7 +597,7 @@ footer
         transition: .25s ease-in-out;
 
       span:nth-child(even)
-        left: 50%;
+        left: 49.5%;
         border-radius: 0 9px 9px 0;
 
       span:nth-child(odd)
@@ -660,6 +660,21 @@ footer
 
     nav
       display: none;
+
+    nav.open
+      display: block;
+      position: absolute;
+      margin: 6px 0 0 -3vh;
+      height: 100vh;
+      width: 102vw;
+      background: #13334c;
+
+      a
+        display: block;
+        width: 50%;
+        font-size: 24px;
+        margin: 5vh auto 0;
+        border-radius: 20px;
 
   /* Homepage Layout */
   #homepage

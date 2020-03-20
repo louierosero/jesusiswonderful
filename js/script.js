@@ -15,5 +15,6 @@ var mySwiper = new Swiper('.swiper-container', {
 $(document).ready(function(){
   $('#nav-icon').click(function(){
 		$(this).toggleClass('open');
+		$('nav').toggleClass('open');
 	});
 });
