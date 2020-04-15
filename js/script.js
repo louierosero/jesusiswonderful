@@ -6,6 +6,9 @@ $(document).ready(function(){
 	});
 });
 
+// Getting the Latest Year
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 // Swiper Slider
 var mySwiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
